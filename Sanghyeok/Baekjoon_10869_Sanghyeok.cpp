@@ -2,13 +2,11 @@
 
 int main(void)
 {
-    int a = 0, b = 0;
+    int a = 0;
 
-    scanf("%d %d", &a, &b);
-    if (a > b)
-        printf(">");
-    else if (a < b)
-        printf("<");
-    else if (a == b)
-        printf("==");
+    scanf("%d", &a);
+    if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0)
+        printf("1");
+    else
+        printf("0");
 }
